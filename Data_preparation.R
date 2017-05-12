@@ -1,18 +1,9 @@
-library("rstan") # врубим на полную мощь Байеса!
-library("shinystan") # и на полную громкость интерактивный анализ полученной цепи
-library("knitr")
 library("dplyr") # стратегия Разделяй - Властвуй - Соединяй
 library("reshape2") # melt - cast
-library("ggplot2") # графики
-library("MCMCpack")
-library("haven")
-library("bayesm")
+library("haven") # импорт и экспорт 'SPSS', 'Stat' и 'SAS'
 library("stringr")
 library("tidyr")
-
-
-rstan_options(auto_write = TRUE)
-options(mc.cores = parallel::detectCores())
+library("knitr")
 
 # Эта часть была взята у Бориса Борисовича отсюда: 
 # https://bdemeshev.github.io/r_cycle/cycle_files/32_bayesian_hierarchical_logit.html
